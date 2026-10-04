@@ -72,3 +72,17 @@ All notable changes to the Fairway Finds web application project are documented 
 
 ### Fixed
 - **Deprecated HTML Tags:** Completely removed outdated presentational markup (`<font>`, `<center>`, `<br>`) and inline layout attributes (`align`, `border`, `cellpadding`, `width`) from `contact.html` and `enquiry.html` to enforce pure separation of concerns.
+
+---
+
+## [2.1.0] - 2026-10-04
+
+### Added
+- **Responsive Layout Media Queries:** Added `@media screen and (max-width: 768px)` media query rules to Section 14 of `styles.css` for tablet and mobile viewports.
+- **Landscape & Short Viewport Support:** Implemented `@media screen and (max-height: 450px)` rules to rescale image containers and 3D flip card heights on mobile landscape screens.
+- **Embedded Media Safeguards:** Added responsive wrapper rules forcing `iframe` elements to dynamic `max-width: 100%` width constraints.
+
+### Changed
+- **Product & Testimonial Grid Cards:** Refactored `table`, `tr`, `tbody`, and `td` layout rules under Section 9/14 to render as full-width block elements on screens $\le 768\text{px}$, preventing horizontal table distortion.
+- **Header Navigation Flex Alignment:** Updated header navigation rules (`header nav ul`) to center-align and wrap cleanly on smaller viewports (`justify-content: center`, `gap: 8px 12px`).
+- **Form Controls Mobile Stacking:** Configured secondary form reset buttons (`.btn-reset`) to wrap cleanly under submit controls on narrow viewports.
