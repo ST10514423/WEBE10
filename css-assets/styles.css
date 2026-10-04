@@ -1,6 +1,6 @@
-/* ==========================================
+/* =========================================================
    1. GLOBAL BODY & BACKGROUND CANVAS
-   ========================================== */
+   ========================================================= */
 body {
     background-color: #0A192F; /* Deep Navy Canvas */
     color: #0A192F;            /* Deep Navy Base Text */
@@ -9,9 +9,9 @@ body {
     padding: 30px 20px;
 }
 
-/* ==========================================
+/* =========================================================
    2. MAIN GOLDEN CONTAINER CARDS
-   ========================================== */
+   ========================================================= */
 header, main, footer {
     max-width: 1100px;
     margin: 0 auto;
@@ -26,9 +26,9 @@ main {
     margin-bottom: 15px;
 }
 
-/* ==========================================
+/* =========================================================
    3. HEADER & NAVIGATION BAR
-   ========================================== */
+   ========================================================= */
 header nav {
     text-align: left;
 }
@@ -59,9 +59,9 @@ header nav a:hover {
     color: #dcf309; /* Bright Electric Yellow */
 }
 
-/* ==========================================
+/* =========================================================
    4. PAGE HEADINGS & TEXT STYLING
-   ========================================== */
+   ========================================================= */
 main, section, center, footer {
     text-align: center;
 }
@@ -95,9 +95,9 @@ p {
     line-height: 1.5;
 }
 
-/* ==========================================
+/* =========================================================
    5. BASE IMAGES & HOVER EFFECTS
-   ========================================== */
+   ========================================================= */
 img {
     display: block;
     margin: 0 auto 15px auto;
@@ -117,9 +117,9 @@ img:hover {
     cursor: pointer;
 }
 
-/* ==========================================
+/* =========================================================
    6. 3D CLICK-TO-FLIP CARD STYLES
-   ========================================== */
+   ========================================================= */
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -202,9 +202,9 @@ img:hover {
     margin-top: 10px;
 }
 
-/* ==========================================
+/* =========================================================
    7. HORIZONTAL DIVIDERS
-   ========================================== */
+   ========================================================= */
 hr {
     border: none;
     border-top: 1px solid #1B4332;
@@ -212,9 +212,9 @@ hr {
     margin: 25px 0;
 }
 
-/* ==========================================
+/* =========================================================
    8. LIST STYLING (About Us Leadership Team)
-   ========================================== */
+   ========================================================= */
 section ul {
     list-style-type: none;
     padding: 0;
@@ -235,9 +235,9 @@ section ul li {
     font-size: 15px;
 }
 
-/* ==========================================
+/* =========================================================
    9. PRODUCT & TESTIMONIAL GRID CARDS
-   ========================================== */
+   ========================================================= */
 table {
     width: 100%;
     border-collapse: separate;
@@ -267,9 +267,9 @@ td p {
     margin: 8px 0;
 }
 
-/* ==========================================
+/* =========================================================
    10. INLINE LINKS & ACCENTS
-   ========================================== */
+   ========================================================= */
 main a {
     color: #0A192F; /* Deep Navy default link color */
     font-weight: bold;
@@ -286,9 +286,9 @@ u {
     font-weight: bold;
 }
 
-/* ==========================================
+/* =========================================================
    11. ENQUIRY & CONTACT FORM STYLING
-   ========================================== */
+   ========================================================= */
 form {
     max-width: 600px;
     margin: 20px auto;
@@ -382,9 +382,9 @@ form {
     background-color: #CCCCCC;
 }
 
-/* ==========================================
+/* =========================================================
    12. FAQ ACCORDION STYLING
-   ========================================== */
+   ========================================================= */
 .faq-container {
     max-width: 700px;
     margin: 20px auto;
@@ -422,9 +422,9 @@ details p {
     text-align: left;
 }
 
-/* ==========================================
+/* =========================================================
    13. FOOTER
-   ========================================== */
+   ========================================================= */
 footer {
     text-align: center;
     margin-top: 15px;
@@ -434,164 +434,80 @@ footer p {
     font-size: 13px;
     color: #0A192F;
 }
+
 /* =========================================================
-   14. RESPONSIVE BREAKPOINTS (MEDIA QUERIES)
+   14. RESPONSIVE LAYOUT & MOBILE FIXES
    ========================================================= */
 
-@media screen and (max-width: 768px) {
+/* Ensure maps and embedded frames never break out of bounds */
+iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
 
-    /* Layout & Body Container Adjustments */
+/* Mobile & Tablet Screens (Width <= 768px) */
+@media screen and (max-width: 768px) {
     body {
         padding: 15px 10px;
     }
 
     header, main, footer {
-        width: 100%;
-        padding: 15px 20px;
+        padding: 15px 15px;
     }
 
-    .site-header {
-        width: 100%;
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    /* Navigation Menu Adjustments */
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
+    /* Keeps navigation links horizontal and wrapping cleanly */
     header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+        justify-content: center;
+        gap: 8px 12px;
     }
 
     header nav li {
-        width: 100%;
+        display: inline-flex;
     }
 
-    header nav a {
+    /* Prevents table columns from collapsing into each other */
+    table, table tr, table tbody {
         display: block;
         width: 100%;
-        padding: 6px 0;
     }
 
-    /* Hero & Content Layout Adjustments */
-    .hero {
-        width: 100%;
-        flex-direction: column;
-        padding: 20px 10px;
-        gap: 20px;
-    }
-
-    .hero-content {
-        width: 100%;
-        flex-shrink: 1;
-    }
-
-    .card-row {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .section {
-        width: 100%;
-        padding: 20px 10px;
-    }
-
-    .cta {
-        width: 100%;
-        padding: 20px 10px;
-    }
-
-    .moods {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* Table & Form Layout Adjustments */
     table tr {
-        flex-direction: column;
-        gap: 15px;
+        margin-bottom: 15px;
     }
 
-    table td {
+    td {
+        display: block;
         width: 100%;
+        margin-bottom: 15px;
         box-sizing: border-box;
     }
 
-    .form-buttons {
-        flex-direction: column;
-    }
-
-    .btn-submit, .btn-reset {
-        width: 100%;
-    }
-
-    /* Responsive Typography Scaling */
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1.35rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    p, li, label, td, input, select, textarea {
-        font-size: 0.95rem;
-    }
-
-    footer {
-        width: 100%;
-        padding: 15px 20px;
+    .btn-reset {
+        margin-left: 0;
+        margin-top: 10px;
     }
 }
-/* LANDSCAPE ORIENTATION (Low Viewport Height <= 500px) */
-@media screen and (max-height: 500px) and (orientation: landscape) {
+
+/* Mobile Landscape & Short Viewports (Height <= 450px) */
+@media screen and (max-height: 450px) {
     body {
-        padding: 10px 15px;
+        padding: 10px 8px;
     }
 
     header, main, footer {
         padding: 10px 15px;
     }
 
-    main {
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    /* Restrain large hero images from overflowing short landscape heights */
-    img, .hero img, main img {
-        max-height: 180px;
+    img {
+        max-height: 140px;
         width: auto;
-        object-fit: contain;
-        margin: 0 auto;
-        display: block;
     }
 
-    h1 {
-        font-size: 1.4rem;
-        margin-bottom: 6px;
+    .flip-card {
+        height: 200px;
     }
 
-    h2 {
-        font-size: 1.15rem;
-        margin-bottom: 4px;
-    }
-
-    p {
-        margin-bottom: 6px;
-    }
-
-    hr {
-        margin: 10px 0;
+    .flip-card-front img {
+        max-height: 130px;
     }
 }
