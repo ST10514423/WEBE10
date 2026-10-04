@@ -88,7 +88,17 @@ fairway-finds/
 
 ---
 
-## 10. References
+## 10. Screenshots (Responsiveness)
+<img width="1201" height="658" alt="image" src="https://github.com/user-attachments/assets/720eda37-8644-4b3e-9f94-8715020d7740" />
+<img width="944" height="664" alt="image" src="https://github.com/user-attachments/assets/e70db5c9-89eb-4389-9841-10cae6fd7dd0" />
+<img width="863" height="717" alt="image" src="https://github.com/user-attachments/assets/cbb58707-583b-4ab1-bf21-bb2349ae516e" />
+<img width="1704" height="940" alt="image" src="https://github.com/user-attachments/assets/eff8d103-f51a-4199-9632-1530305f84ff" />
+<img width="942" height="704" alt="image" src="https://github.com/user-attachments/assets/f8a352c8-ed82-47d6-b7a2-1bf85ed6687e" />
+<img width="1759" height="936" alt="image" src="https://github.com/user-attachments/assets/f0043901-1806-4354-b9b7-7bb295f78515" />
+
+---
+
+## 11. References
 * Duckett, J. (2011) *HTML and CSS: Design and Build Websites*. Indianapolis: John Wiley & Sons.
 * Gemini (2026) *AI assistant response to HTML5 website structure, academic rubric alignment, and feature conceptualization queries*, 31 August. Available at: <https://gemini.google.com> (Accessed: 31 August 2026).
 * Mozilla Developer Network (2026) *HTML: HyperText Markup Language*, MDN Web Docs [online]. Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> (Accessed: 31 August 2026).
