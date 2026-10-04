@@ -79,14 +79,14 @@ This Part 2 release directly addresses and implements all assessment feedback pr
 
 ## 10. References
 * Duckett, J. (2011) *HTML and CSS: Design and Build Websites*. Indianapolis: John Wiley & Sons.
-* Gemini (2026) *AI assistant response to HTML5 website structure, academic rubric alignment, and feature conceptualization queries*, 31 August. Available at: <https://gemini.google.com> (Accessed: 31 August 2026).
+* Gemini (2026) *AI assistant response to, academic rubric alignment and feature conceptualization queries*, 2 October. Available at: <https://gemini.google.com> (Accessed: 2 October 2026).
 * Keep a Changelog (2023) *How to maintain a readable changelog*, Keep a Changelog [online]. Available at: <https://keepachangelog.com/en/1.0.0/> (Accessed: 4 October 2026).
 * Mozilla Developer Network (2026) *CSS: Cascading Style Sheets*, MDN Web Docs [online]. Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS> (Accessed: 4 October 2026).
-* Mozilla Developer Network (2026) *HTML: HyperText Markup Language*, MDN Web Docs [online]. Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> (Accessed: 31 August 2026).
-* W3C (2023) *HTML5 Specification: A Vocabulary and Associated APIs for HTML and XHTML*, World Wide Web Consortium [online]. Available at: <https://www.w3.org/TR/html52/> (Accessed: 31 August 2026).
+* Mozilla Developer Network (2026) *HTML: HyperText Markup Language*, MDN Web Docs [online]. Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> (Accessed: 2 October 2026).
+* W3C (2023) *HTML5 Specification: A Vocabulary and Associated APIs for HTML and XHTML*, World Wide Web Consortium [online]. Available at: <https://www.w3.org/TR/html52/> (Accessed: 3 October 2026).
 * W3C (2024) *CSS Responsive Web Design Modules*, World Wide Web Consortium [online]. Available at: <https://www.w3.org/TR/css-device-adapt-1/> (Accessed: 4 October 2026).
 * W3Schools (2026) *CSS Responsive Web Design*, W3Schools Online Web Tutorials [online]. Available at: <https://www.w3schools.com/css/css_rwd_intro.asp> (Accessed: 4 October 2026).
-* W3Schools (2026) *HTML Tag Reference*, W3Schools Online Web Tutorials [online]. Available at: <https://www.w3schools.com/tags/default.asp> (Accessed: 31 August 2026).
+* W3Schools (2026) *HTML Tag Reference*, W3Schools Online Web Tutorials [online]. Available at: <https://www.w3schools.com/tags/default.asp> (Accessed: 2 October 2026).
 
 ---
 
