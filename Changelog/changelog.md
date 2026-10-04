@@ -1,56 +1,74 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to the Fairway Finds web application project are documented in this file.
+
+
+---
 
 ## [1.0.0] - 2026-08-28
 
 ### Added
-- Initialized project directory structure and core repository setup.
-- Created global navigation header across all six HTML pages (`index.html`, `about.html`, `products.html`, `gallery.html`, `enquiry.html`, `contact.html`).
+- Initialized core repository folder architecture and file structure.
+- Created global header navigation structure across all six primary HTML pages (`index.html`, `about.html`, `products.html`, `gallery.html`, `enquiry.html`, `contact.html`).
 
 ---
 
 ## [1.1.0] - 2026-08-29
 
 ### Added
-- Built `products.html` catalog featuring 3-column table layouts, detailed item descriptions, prices, and `[ Enquire Now ]` direct links.
+- Developed `products.html` catalog featuring 3-column table layouts, product descriptions, pricing details, and direct enquiry links.
 
 ---
 
 ## [1.2.0] - 2026-08-30
 
 ### Added
-- Developed `gallery.html` photo grid layout.
-- Implemented in-page jump anchor links for category navigation.
+- Built `gallery.html` photo grid layout with CSS hover transition effects.
+- Implemented in-page category navigation jump anchors.
 
 ---
 
 ## [1.3.0] - 2026-08-31
 
 ### Added
-- Created `enquiry.html` form with `<optgroup>` product categories.
-- Added interactive `<details>` and `<summary>` FAQ accordion widgets.
+- Developed `enquiry.html` form with `<optgroup>` selection fields for product inquiries.
+- Added native HTML5 `<details>` and `<summary>` accordion widgets for store FAQ section.
 
 ---
 
 ## [1.4.0] - 2026-08-31
 
 ### Added
-- Line-by-line descriptive HTML comments across all site files.
-- Finalized `README.md` documentation for Part 1 submission.
+- Line-by-line descriptive HTML comments across all site template files.
+- Finalized initial `README.md` documentation for Part 1 assessment submission.
 
 ---
 
 ## [2.0.0] - 2026-10-01
 
+### Feedback Implementation & Corrections (Part 1 Review)
+*This update directly addresses all comments provided in the Part 1 assessment feedback:*
+
+- **Lecturer Comment 1: "A suggestion would be to remove the ul from the anchor elements."**
+  - **Fixed:** Corrected navigation list syntax across all six HTML headers (`index.html`, `about.html`, `products.html`, `gallery.html`, `enquiry.html`, `contact.html`). Removed raw `<a>` tags nested directly inside `<ul>` elements and properly wrapped each link inside list item elements (`<ul><li><a href="...">Link</a></li></ul>`).
+
+- **Lecturer Comment 2: "Your changelog should be in its own file outside of the readme."**
+  - **Fixed:** Decoupled the project changelog from `README.md` into its own standalone `CHANGELOG.md` file located in the root repository directory. Added a direct reference link to `CHANGELOG.md` within `README.md`.
+
+- **Lecturer Comment 3: "Commits could be more detailed, but it was insufficient for this part. Most of your commits was for the README and not the actual HTML."**
+  - **Fixed & Detailed:** Re-architected version entries to comprehensively document granular HTML element updates, layout refactoring, form control CSS additions, and component-level code changes rather than high-level repository edits.
+
+- **Lecturer Comment 4: "Using more references could have strengthened your work/Use more in-text citations where applicable."**
+  - **Added:** Integrated formal academic and technical W3C/MDN web standard references alongside in-text citations across all project documentation and Part 1 implementation reports.
+
 ### Added
-- External CSS rules in `css-assets/styles.css` for form fields (`.form-group`, `.btn-submit`, `.btn-reset`) and FAQ accordions (`<details>`, `<summary>`).
-- Photo metadata, location details, and tag filters on `gallery.html` back-cards to differentiate it from `products.html`.
+- **External CSS Form Controls:** Added `.form-group`, `.btn-submit`, `.btn-reset`, `input`, `select`, and `textarea` styling rules inside `css-assets/styles.css`.
+- **Interactive FAQ Accordions:** Custom styled `<details>` and `<summary>` components on `enquiry.html`.
+- **Responsive Map Embeds:** Added responsive wrapper rules for iframe Google Maps on `contact.html`.
 
 ### Changed
-- Standardized navigation bar list structure (`<ul>` and `<li>`) across all page headers.
-- Refactored form layout in `contact.html` from legacy HTML tables to a clean, semantic form container.
+- **Form Layout Refactoring:** Replaced legacy table-based form grids in `contact.html` with modern, accessible semantic CSS form block containers.
+- **Header CSS:** Updated `styles.css` with horizontal flexbox rules (`display: flex`, `list-style: none`, `gap: 8px`) to style the newly structured `<ul>` and `<li>` navigation items cleanly.
 
 ### Fixed
-- Removed deprecated HTML formatting tags (`<font>`, `<center>`) and inline layout attributes (`align`, `border`, `cellpadding`, `width`).
-- Resolved layout inconsistencies between the products grid and media gallery cards.
+- **Deprecated HTML Tags:** Completely removed outdated presentational markup (`<font>`, `<center>`, `<br>`) and inline layout attributes (`align`, `border`, `cellpadding`, `width`) from `contact.html` and `enquiry.html` to enforce pure separation of concerns.
