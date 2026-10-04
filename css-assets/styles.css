@@ -1,0 +1,513 @@
+/* =========================================================
+   1. GLOBAL BODY & BACKGROUND CANVAS
+   ========================================================= */
+body {
+    background-color: #0A192F; /* Deep Navy Canvas */
+    color: #0A192F;            /* Deep Navy Base Text */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+/* =========================================================
+   2. MAIN GOLDEN CONTAINER CARDS
+   ========================================================= */
+header, main, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #D2C87A; /* Golden Tan Card Surface */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+   3. HEADER & NAVIGATION BAR
+   ========================================================= */
+header nav {
+    text-align: left;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+header nav li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+header nav a {
+    color: #1B4332; /* Fairway Green */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #dcf309; /* Bright Electric Yellow */
+}
+
+/* =========================================================
+   4. PAGE HEADINGS & TEXT STYLING
+   ========================================================= */
+main, section, center, footer {
+    text-align: center;
+}
+
+h1 {
+    color: #1B4332; /* Fairway Green */
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1B4332; /* Fairway Green */
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #1B4332; /* Fairway Green */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #0A192F; /* Deep Navy */
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   5. BASE IMAGES & HOVER EFFECTS
+   ========================================================= */
+img {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #1B4332; /* Fairway Green Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Smooth Image Hover Zoom for Static Images */
+img:hover {
+    transform: scale(1.05);
+    border-color: #0A192F;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* =========================================================
+   6. 3D CLICK-TO-FLIP CARD STYLES
+   ========================================================= */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 280px;
+    perspective: 1000px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+/* Triggered when clicked via HTML/JS class toggle */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: #FFFFFF;
+}
+
+.flip-card-front img {
+    max-height: 200px;
+    width: auto;
+    border: none;
+    margin: 0 auto;
+}
+
+/* Override default zoom hover behavior inside flip cards */
+.flip-card-front img:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.flip-card-back {
+    background-color: #1B4332; /* Fairway Green Back */
+    color: #FFFFFF;
+    transform: rotateY(180deg);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.flip-card-back h4 {
+    color: #D2C87A; /* Golden Tan Title */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.flip-card-back p {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
+.flip-card-back .hint {
+    font-size: 11px;
+    color: #D2C87A;
+    margin-top: 10px;
+}
+
+/* =========================================================
+   7. HORIZONTAL DIVIDERS
+   ========================================================= */
+hr {
+    border: none;
+    border-top: 1px solid #1B4332;
+    opacity: 0.35;
+    margin: 25px 0;
+}
+
+/* =========================================================
+   8. LIST STYLING (About Us Leadership Team)
+   ========================================================= */
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+section ul li {
+    display: block;
+    background-color: #FFFFFF;
+    color: #0A192F;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #1B4332;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 15px;
+}
+
+/* =========================================================
+   9. PRODUCT & TESTIMONIAL GRID CARDS
+   ========================================================= */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    margin: 20px auto;
+}
+
+td {
+    width: 33.33%;
+    padding: 20px 15px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #FFFFFF; /* White Inner Card Fill */
+    border-radius: 6px;
+    border-top: 4px solid #1B4332; /* Fairway Green Top Accent Strip */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Lift */
+td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+td p {
+    margin: 8px 0;
+}
+
+/* =========================================================
+   10. INLINE LINKS & ACCENTS
+   ========================================================= */
+main a {
+    color: #0A192F; /* Deep Navy default link color */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+main a:hover {
+    color: #1dec0a; /* Vibrant Neon Green on Hover */
+}
+
+u {
+    color: #1B4332;
+    font-weight: bold;
+}
+
+/* =========================================================
+   11. ENQUIRY & CONTACT FORM STYLING
+   ========================================================= */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 6px;
+    border-top: 4px solid #1B4332;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #0A192F;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1B4332;
+    box-shadow: 0 0 5px rgba(27, 67, 50, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background-color: #1B4332;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0A192F;
+}
+
+.btn-reset {
+    background-color: #E0E0E0;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-reset:hover {
+    background-color: #CCCCCC;
+}
+
+/* =========================================================
+   12. FAQ ACCORDION STYLING
+   ========================================================= */
+.faq-container {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+details {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #1B4332;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+details[open] {
+    background-color: #F9F9F9;
+}
+
+summary {
+    font-weight: bold;
+    color: #0A192F;
+    font-size: 15px;
+    outline: none;
+}
+
+details p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* =========================================================
+   13. FOOTER
+   ========================================================= */
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #0A192F;
+}
+
+/* =========================================================
+   14. RESPONSIVE LAYOUT & MOBILE FIXES
+   ========================================================= */
+
+/* Ensure maps and embedded frames never break out of bounds */
+iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* Mobile & Tablet Screens (Width <= 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header, main, footer {
+        padding: 15px 15px;
+    }
+
+    /* Keeps navigation links horizontal and wrapping cleanly */
+    header nav ul {
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    header nav li {
+        display: inline-flex;
+    }
+
+    /* Prevents table columns from collapsing into each other */
+    table, table tr, table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .btn-reset {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile Landscape & Short Viewports (Height <= 450px) */
+@media screen and (max-height: 450px) {
+    body {
+        padding: 10px 8px;
+    }
+
+    header, main, footer {
+        padding: 10px 15px;
+    }
+
+    img {
+        max-height: 140px;
+        width: auto;
+    }
+
+    .flip-card {
+        height: 200px;
+    }
+
+    .flip-card-front img {
+        max-height: 130px;
+    }
+}
