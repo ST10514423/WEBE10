@@ -553,7 +553,7 @@ footer p {
         padding: 15px 20px;
     }
 }
-/* LANDSCAPE ORIENTATION FIX (Low Viewport Height <= 500px) */
+/* LANDSCAPE ORIENTATION (Low Viewport Height <= 500px) */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     body {
         padding: 10px 15px;
